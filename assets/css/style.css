@@ -1,0 +1,438 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-style: normal;
+}
+
+@font-face {
+    src: url(../webfonts/fa-solid-900.eot);
+    font-family: test;
+}
+
+html {
+    --secColor: rgba(255, 255, 255, 0.7);
+    --mainColor: #f4623a;
+}
+
+.body {
+    font-family: test;
+}
+
+.continer {
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    background-color: crimson
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.navbar.continer {
+    overflow: auto;
+}
+
+.logo {
+    float: left;
+    width: 35%;
+    color: var(--secColor);
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+.nav {
+    float: left;
+    width: 65%;
+    text-align: right;
+    font-size: 20px;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.list-item {
+    display: inline-block;
+}
+
+.nav .list {
+    list-style-type: none;
+}
+
+.link-nav {
+    color: var(--secColor);
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.header-content {
+    background-image: url(../img/bg-masthead.jpg);
+    background-size: cover;
+    background-position: 0 -140px;
+    height: 100vh;
+}
+
+
+/*300 or 200*/
+
+.header-content-item {
+    text-align: center;
+    padding-top: 150px;
+}
+
+.main-title {
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    width: 50%;
+    margin: auto;
+}
+
+.line {
+    background-color: var(--mainColor);
+    height: 3px;
+    width: 80px;
+    display: block;
+    margin: 20px auto;
+}
+
+.main-discription {
+    color: var(--secColor);
+    font-size: 19px;
+    width: 32%;
+    margin: auto;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    margin-top: 30px;
+    display: block;
+    background-color: var(--mainColor);
+    width: fit-content;
+    margin: 30px auto;
+    padding: 20px 50px;
+    border-radius: 35px;
+}
+
+.header .overlay {
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%);
+    height: 100%;
+}
+
+
+/*end header*/
+
+
+/*start about*/
+
+.about {
+    background-color: var(--mainColor);
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.about-heading {
+    color: white;
+}
+
+.about .line {
+    background-color: white;
+}
+
+.about-discription {
+    color: rgba(255, 255, 255, 0.75);
+    width: 31%;
+    margin: auto;
+}
+
+.about .link {
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+}
+
+
+/*end about*/
+
+
+/*start services*/
+
+.services {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.services-heading {
+    text-transform: capitalize;
+}
+
+.services-items {
+    overflow: auto;
+    margin-top: 73px;
+}
+
+.service-item {
+    float: left;
+    width: 25%;
+}
+
+.service-item .fas {
+    color: var(--mainColor);
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+.servies-title {
+    text-transform: capitalize;
+}
+
+.servies-discription {
+    color: #6c757d;
+    width: 55%;
+    margin: auto;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+/*end services*/
+
+
+/*start portfolio*/
+
+.portfolio {
+    padding-top: 100px;
+}
+
+.portfolio .portfolio-item {
+    float: left;
+    width: 33.33%;
+    position: relative;
+}
+
+.port-items {
+    overflow: hidden;
+}
+
+.portfolio img {
+    display: block;
+    width: 100%;
+}
+
+.portfolio .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--mainColor);
+    opacity: 0;
+}
+
+.overlay-content {
+    text-align: center;
+    padding-top: 149px;
+}
+
+.portfolio-main {
+    color: var( --secColor);
+    font-size: 20px;
+}
+
+.portfolio-main-second {
+    color: white;
+    font-size: 25px;
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 0.8;
+}
+
+
+/*end portfolio*/
+
+
+/*start dawnload*/
+
+.dawnload .link {
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+}
+
+.dawnload {
+    background-color: #343a40;
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.dawnload-heading {
+    color: white;
+    text-transform: capitalize;
+}
+
+
+/*end dawnload*/
+
+
+/*start contact*/
+
+.contact {
+    padding-top: 100px;
+}
+
+.contact-title {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.contact-discription {
+    color: #6c757d;
+    width: 31%;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-item {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.contact-items {
+    overflow: hidden;
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.contact-item .fas {
+    display: block;
+    font-size: 40px;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.contact-item .contact {
+    color: var(--mainColor);
+}
+
+.contact-info {
+    font-size: 20px;
+}
+
+
+/*end contact*/
+
+
+/*start footer*/
+
+.footer {
+    padding-top: 50px;
+    padding: 53px;
+    background-color: #f8f9fd;
+    text-align: center;
+}
+
+
+/*end footer*/
+
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+
+@media (max-width: 575.98px) {
+    .logo,
+    .nav {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }
+    .logo {
+        margin-bottom: 10px;
+    }
+    .header-content-item {
+        padding-top: 100px;
+    }
+    .main-title {
+        font-size: 20px;
+        width: 100%;
+        margin-top: 100px;
+    }
+    .main-discription {
+        width: 100%;
+        margin-top: 70px;
+    }
+    .service-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .portfolio .portfolio-item {
+        width: 100%;
+    }
+    .dawnload {
+        display: none;
+    }
+    .contact-item {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .section {
+        padding-top: 0;
+    }
+}
+
+
+/*// Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .logo,
+    .nav {
+        width: 100%;
+        text-align: center;
+    }
+    .logo {
+        margin-bottom: 10px;
+    }
+    .header-content-item {
+        padding-top: 100px;
+    }
+    .main-title {
+        font-size: 20px;
+        width: 100%;
+        margin-top: 100px;
+    }
+    .main-discription {
+        width: 100%;
+        margin-top: 70px;
+    }
+    .service-item {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .portfolio .portfolio-item {
+        width: 50%;
+    }
+    .contact-item {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .section {
+        padding-top: 0;
+    }
+}
